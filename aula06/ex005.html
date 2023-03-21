@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iniciando os estudos</h1>
+    <p>Aqui vai o resultado</p>
+    <div name = 'perenaldo'>P e r e n a l d o</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id = 'msg'>Clique em mim!</div>
+</body>
+<script>   
+    var corpo = window.document.body;
+    var p1 = window.document.getElementsByTagName('p')[1];
+    document.write(p1.innerHTML);
+    var d = window.document.getElementById('msg');
+    d.style.background = 'green';
+    d.innerText = 'Estou aguardando...';
+    var perenaldo = window.document.getelementsbyname('perenaldo');
+    document.write(perenaldo.innerHTML);
+    document.write(perenaldo.innerHTML);
+</script>
+</html>
