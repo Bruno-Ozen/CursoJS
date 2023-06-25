@@ -10,15 +10,19 @@
     <h1>Sistema de multas</h1>
     Velocidade do carro: <input type="number" name = "vel" id = "txtVel">
     <input type="button" value="Calcular" onclick = 'calcular()'>
+    <div id = 'res'>
+        
+    </div>
     <script>
         function calcular(){
             var vel = window.document.getElementById('txtVel');
+            var res = window.document.querySelector('div#res');
             if(Number(vel.value) > 40){
-                document.writeln('Você está acima da velocidade, MULTADO!!!');
+                res.innerHTML = 'Você está acima de 40KM/h, <strong>MULTADO!</strong>.';
             }else{
-                document.writeln('Você está na velocidade correta, continue assim!!');
+                res.innerHTML = 'Você está <em>na velocidade correta</em>, continue assim!';
             }
         }
-    </script>t
+    </script>
 </body>
 </html>
